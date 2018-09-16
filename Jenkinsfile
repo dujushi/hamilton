@@ -1,5 +1,10 @@
-node {
-    stage('Checkout') {
-        git 'https://github.com/dujushi/hamilton'
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                bat 'set'
+            }
+        }
     }
 }
