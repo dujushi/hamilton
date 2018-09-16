@@ -1,10 +1,5 @@
-pipeline {
-    agent { docker { image 'node:6.3' } }
-    stages {
-        stage('build') {
-            steps {
-                bat 'echo test'
-            }
-        }
+node {
+    stage('Checkout') {
+        git 'https://github.com/dujushi/hamilton'
     }
 }
